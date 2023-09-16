@@ -1,0 +1,139 @@
+header {
+    height: 3.75em;
+    width: 100%;
+    background-color: #604829;
+}
+
+.topo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logotipo {
+    height: 3.75em;
+}
+
+.link-nav {
+    color: #c4a47c;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0 10px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-shadow: 3px 3px 2px #000;
+}
+
+.link-nav:hover {
+    color: #fff;
+    transition: all 0.3s;
+}
+
+
+
+/* Typical Device Breakpoints 
+------------------------------
+
+Pequenas telas: até 600px
+Celulares: 600px até 768px
+Tablet: 768px até 992px
+Desktop: 992px até 1200px
+Grande telas: acima de 1200px
+*/
+
+/* Pequenas telas: até 600px */
+@media screen and (max-width: 600px) {
+    header {
+        height: 6.75em;
+    }
+
+    .topo {
+        flex-direction: column;
+    }
+
+    .links-nav {
+        text-align: center;
+        border-top: 1px solid #c4a47c;
+        padding: 10px 0;
+    }
+
+    .link-nav {
+        font-size: 10px;
+        margin: 0 10px;
+        text-shadow: 3px 3px 2px #000;
+        transition: font-size .3s ;
+        transition-timing-function: ease;
+    }
+}
+
+/* Celulares: 600px até 768px */
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    header {
+        height: 3.75em;
+    }
+
+    .topo {
+        flex-direction: row;
+    }
+
+    .links-nav {
+        text-align: center;
+        border: hidden;
+        padding: 10px 0;
+    }
+
+    .link-nav {
+        font-size: 14px;
+        margin: 0 10px;
+        text-shadow: 3px 3px 2px #000;
+        transition: font-size .3s ;
+        transition-timing-function: ease;
+    }
+}
+
+/* Tablet: 768px até 992px */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    header {
+        height: 3.75em;
+    }
+
+    .link-nav {
+        font-size: 14px;
+        margin: 0 10px;
+        text-shadow: 3px 3px 2px #000;
+        transition: font-size .3s ;
+        transition-timing-function: ease;
+    }
+}
+
+/* Desktop: 992px até 1200px */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    header {
+        height: 3.75em;
+    }
+
+    .link-nav {
+        font-size: 14px;
+        margin: 0 10px;
+        text-shadow: 3px 3px 2px #000;
+        transition: font-size .3s ;
+        transition-timing-function: ease;
+    }
+}
+
+/* Grande telas: acima de 1200px */
+@media screen and (min-width: 1200px) {
+    header {
+        height: 3.75em;
+    }
+
+    .link-nav {
+        font-size: 16px;
+        margin: 0 10px;
+        text-shadow: 3px 3px 2px #000;
+        transition: font-size .3s ;
+        transition-timing-function: ease;
+    }
+}

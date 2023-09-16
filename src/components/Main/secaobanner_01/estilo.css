@@ -1,0 +1,103 @@
+.container-fnd01{
+    height: 300px;
+    background-image: url(/public/assets/parallax-imagem2.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.container-fnd01 p{
+    width: 40%;
+    background-color: #604829;
+    padding: 5px 10px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+}
+
+/* Typical Device Breakpoints 
+------------------------------
+
+Pequenas telas: até 600px
+Celulares: 600px até 768px
+Tablet: 768px até 992px
+Desktop: 992px até 1200px
+Grande telas: acima de 1200px
+
+transition: font-size .3s ;
+        transition-timing-function: ease;
+*/
+
+
+/* Pequenas telas: até 600px */
+@media screen and (max-width: 600px) {
+    .container-fnd01{
+        height: 250px;
+    }
+    .container-fnd01 p{
+        width: 40%;
+        font-size: 12px;
+        
+    }
+}
+
+/* Celulares: 600px até 768px */
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    .container-fnd01{
+        height: 250px;
+    }
+    .container-fnd01 p{
+        width: 40%;
+        font-size: 14px;
+        transition: font-size .3s, width .3s ;
+        transition-timing-function: ease;
+    }
+}
+
+/* Tablet: 768px até 992px */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .container-fnd01{
+        height: 250px;
+    }
+    .container-fnd01 p{
+        width: 35%;
+        font-size: 16px;
+        transition: font-size .3s, width .3s ;
+        transition-timing-function: ease;
+    }
+}
+
+/* Desktop: 992px até 1200px */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .container-fnd01{
+        height: 250px;
+    }
+    .container-fnd01 p{
+        width: 30%;
+        font-size: 17px;
+        transition: font-size .3s, width .3s ;
+        transition-timing-function: ease;
+    }
+}
+
+/* Grande telas: acima de 1200px */
+@media screen and (min-width: 1200px) {
+    .container-fnd01{
+        height: 250px;
+    }
+    .container-fnd01 p{
+        width: 25%;
+        font-size: 18px;
+        transition: font-size .3s, width .3s ;
+        transition-timing-function: ease;
+    }
+}

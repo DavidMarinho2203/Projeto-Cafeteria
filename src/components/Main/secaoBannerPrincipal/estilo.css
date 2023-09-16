@@ -1,0 +1,76 @@
+.bnn-principal {
+    width: 100%;
+    height: 100vh;
+    background-image: url(/public/assets/parallax-imagem1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bnn-principal h1 {
+    height: 100%;
+    font-size: 5rem;
+    font-family: 'Fraunces', serif;
+    font-weight: normal;
+    color: #fff;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Typical Device Breakpoints 
+------------------------------
+
+Pequenas telas: até 600px
+Celulares: 600px até 768px
+Tablet: 768px até 992px
+Desktop: 992px até 1200px
+Grande telas: acima de 1200px
+*/
+
+/* Pequenas telas: até 600px */
+@media screen and (max-width: 600px) {
+    .bnn-principal h1 {
+        font-size: 1.5em;
+        transition: font-size .3s ;
+        transition-timing-function: ease;
+    }
+}
+
+/* Celulares: 600px até 768px */
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    .bnn-principal h1 {
+        font-size: 1.8em;
+        transition: font-size .3s ;
+        transition-timing-function: ease;
+    }
+}
+
+/* Tablet: 768px até 992px */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .bnn-principal h1 {
+        font-size: 2.5em;
+        transition: font-size .3s ;
+        transition-timing-function: ease;
+    }
+}
+
+/* Desktop: 992px até 1200px */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .bnn-principal h1 {
+        font-size: 3.2em;
+        transition: font-size .3s ;
+        transition-timing-function: ease;
+    }
+}
+
+/* Grande telas: acima de 1200px */
+@media screen and (min-width: 1200px) {
+    .bnn-principal h1 {
+        font-size: 4em;
+        transition: font-size .3s ;
+        transition-timing-function: ease;
+    }
+}

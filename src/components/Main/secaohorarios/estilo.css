@@ -1,0 +1,255 @@
+.container-horario {
+    height: 100vh;
+    background-image: url(/public/assets/cafeteria.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.horario-titulo {
+    width: 100%;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 5px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.horario-tab {
+    height: 40%;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.horario-tab-li {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+.horario-dia {
+    width: 22%;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff;
+
+}
+
+.horario-traço {
+    width: 100%;
+    height: 1px;
+    background-color: #666;
+}
+
+.horario-horario {
+    width: 25%;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: end;
+}
+
+.horario-horario-fechado {
+    width: 25%;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #c4a47c;
+    text-align: end;
+}
+
+/* Typical Device Breakpoints 
+------------------------------
+
+Pequenas telas: até 600px
+Celulares: 600px até 768px
+Tablet: 768px até 992px
+Desktop: 992px até 1200px
+Grande telas: acima de 1200px
+
+transition: font-size .3s ;
+        transition-timing-function: ease;
+*/
+
+
+
+/* Pequenas telas: até 600px */
+@media screen and (max-width: 600px) {
+    .horario-titulo {
+        width: 80%;
+        letter-spacing: 3px;
+        font-size: 18px;
+    }
+
+    .horario-tab {
+        height: 50%;
+        width: 80vw;
+    }
+
+    .horario-tab-li {
+        width: 100%;
+    }
+
+    .horario-dia {
+        width: 35%;
+        font-size: 12px;
+    }
+
+    .horario-horario, .horario-horario-fechado {
+        width: 35%;
+        font-size: 12px;
+    }
+}
+
+/* Celulares: 600px até 768px */
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    .horario-titulo {
+        width: 80%;
+        letter-spacing: 4px;
+        font-size: 18px;
+        transition: letter-spacing .3s ;
+        transition-timing-function: ease;
+    }
+
+    .horario-tab {
+        height: 50%;
+        width: 70vw;
+        transition: width .3s ;
+        transition-timing-function: ease;
+    }
+
+    .horario-tab-li {
+        width: 100%;
+    }
+
+    .horario-dia {
+        width: 25%;
+        font-size: 14px;
+        transition: font-size .3s , width .3s;
+        transition-timing-function: ease;
+    }
+
+    .horario-horario, .horario-horario-fechado {
+        width: 35%;
+        font-size: 14px;
+        transition: letter-spacing .3s , width .3s;
+        transition-timing-function: ease;
+    }
+}
+
+/* Tablet: 768px até 992px */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .horario-titulo {
+        width: 80%;
+        letter-spacing: 4px;
+        font-size: 20px;
+        transition: letter-spacing .3s , font-size .3s;
+        transition-timing-function: ease;
+    }
+
+    .horario-tab {
+        height: 50%;
+        width: 60vw;
+        transition: width .3s ;
+        transition-timing-function: ease;
+    }
+
+    .horario-tab-li {
+        width: 100%;
+    }
+
+    .horario-dia {
+        width: 20%;
+        font-size: 14px;
+        transition: font-size .3s , width .3s;
+        transition-timing-function: ease;
+    }
+
+    .horario-horario, .horario-horario-fechado {
+        width: 25%;
+        font-size: 14px;
+        transition: letter-spacing .3s , width .3s;
+        transition-timing-function: ease;
+    }
+}
+
+/* Desktop: 992px até 1200px */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .horario-titulo {
+        width: 80%;
+        letter-spacing: 4px;
+        font-size: 20px;
+        transition: letter-spacing .3s , font-size .3s;
+        transition-timing-function: ease;
+    }
+
+    .horario-tab {
+        height: 50%;
+        width: 50vw;
+        transition: width .3s ;
+        transition-timing-function: ease;
+    }
+
+    .horario-tab-li {
+        width: 100%;
+    }
+
+    .horario-dia {
+        width: 20%;
+        font-size: 14px;
+        transition: font-size .3s , width .3s;
+        transition-timing-function: ease;
+    }
+
+    .horario-horario, .horario-horario-fechado {
+        width: 25%;
+        font-size: 14px;
+        transition: letter-spacing .3s , width .3s;
+        transition-timing-function: ease;
+    }
+}
+
+/* Grande telas: acima de 1200px */
+@media screen and (min-width: 1200px) {
+    .horario-titulo {
+        width: 80%;
+        letter-spacing: 4px;
+        font-size: 20px;
+        transition: letter-spacing .3s , font-size .3s;
+        transition-timing-function: ease;
+    }
+
+    .horario-tab {
+        height: 50%;
+        width: 40vw;
+        transition: width .3s ;
+        transition-timing-function: ease;
+    }
+
+    .horario-tab-li {
+        width: 100%;
+    }
+
+    .horario-dia {
+        width: 20%;
+        font-size: 15px;
+        transition: font-size .3s , width .3s;
+        transition-timing-function: ease;
+    }
+
+    .horario-horario, .horario-horario-fechado {
+        width: 25%;
+        font-size: 14px;
+        transition: letter-spacing .3s , width .3s;
+        transition-timing-function: ease;
+    }
+}

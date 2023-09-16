@@ -1,0 +1,148 @@
+.container-txt {
+    height: 200px;
+    width: 70%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto;
+}
+
+.container-txt h2 {
+    font-size: 18px;
+    font-family: 'Oswald', sans-serif;
+    color: #c4a47c;
+    padding-bottom: 20px;
+}
+
+.container-txt p {
+    font-size: 12px;
+    font-family: 'Lato', sans-serif;
+    color: #ACACAC;
+    line-height: 28px;
+}
+
+/* Typical Device Breakpoints 
+------------------------------
+
+Pequenas telas: até 600px
+Celulares: 600px até 768px
+Tablet: 768px até 992px
+Desktop: 992px até 1200px
+Grande telas: acima de 1200px
+
+transition: font-size .3s ;
+transition-timing-function: ease;
+*/
+
+
+
+/* Pequenas telas: até 600px */
+@media screen and (max-width: 37.5em) {
+    .container-txt {
+        height: 200px;
+        width: 80%;
+        margin: 40px auto;
+    }
+    .container-txt h2 {
+        font-size: 14px;
+    }
+
+    .container-txt p {
+        font-size: 10px;
+        line-height: 16px;
+    }
+}
+
+/* Celulares: 600px até 768px */
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    .container-txt {
+        height: 200px;
+        width: 80%;
+        margin: 40px auto;
+        transition: width .3s ;
+        transition-timing-function: ease;
+    }
+    .container-txt h2 {
+        font-size: 16px;
+        transition: font-size .3s;
+        transition-timing-function: ease;
+    }
+
+    .container-txt p {
+        font-size: 10px;
+        line-height: 20px;
+        transition: line-height .3s ;
+        transition-timing-function: ease;
+    }
+}
+
+/* Tablet: 768px até 992px */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .container-txt {
+        height: 200px;
+        width: 70%;
+        margin: 40px auto;
+        transition: width .3s ;
+        transition-timing-function: ease;
+    }
+    .container-txt h2 {
+        font-size: 18px;
+        transition: font-size .3s;
+        transition-timing-function: ease;
+    }
+
+    .container-txt p {
+        font-size: 12px;
+        line-height: 20px;
+        transition: line-height .3s , font-size .3s ;
+        transition-timing-function: ease;
+    }
+}
+
+/* Desktop: 992px até 1200px */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .container-txt {
+        height: 200px;
+        width: 60%;
+        margin: 40px auto;
+        transition: width .3s ;
+        transition-timing-function: ease;
+    }
+    .container-txt h2 {
+        font-size: 20px;
+        transition: font-size .3s;
+        transition-timing-function: ease;
+    }
+
+    .container-txt p {
+        font-size: 12px;
+        line-height: 24px;
+        transition: line-height .3s , font-size .3s ;
+        transition-timing-function: ease;
+    }
+}
+
+/* Grande telas: acima de 1200px */
+@media screen and (min-width: 1200px) {
+    .container-txt {
+        height: 200px;
+        width: 50%;
+        margin: 40px auto;
+        transition: width .3s ;
+        transition-timing-function: ease;
+    }
+    .container-txt h2 {
+        font-size: 20px;
+        transition: font-size .3s;
+        transition-timing-function: ease;
+    }
+
+    .container-txt p {
+        font-size: 12px;
+        line-height: 24px;
+        transition: line-height .3s , font-size .3s ;
+        transition-timing-function: ease;
+    }
+}

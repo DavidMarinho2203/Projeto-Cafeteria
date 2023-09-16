@@ -1,0 +1,96 @@
+footer {
+    height: 80px;
+    width: 100%;
+    background-color: #000;
+
+
+}
+
+.rodape {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.botaoVoltar {
+    position: absolute;
+    right: 2.5em;
+    top: -1.25em;
+    width: 2.5em;
+    height: 2.5em;
+}
+
+.dReservados {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+}
+
+.dReservados span {
+    color: #c4a47c;
+    font-weight: bold;
+}
+
+/* Typical Device Breakpoints 
+------------------------------
+
+Pequenas telas: até 600px
+Celulares: 600px até 768px
+Tablet: 768px até 992px
+Desktop: 992px até 1200px
+Grande telas: acima de 1200px
+
+transition: font-size .3s ;
+        transition-timing-function: ease;
+*/
+
+
+
+/* Pequenas telas: até 600px */
+@media screen and (max-width: 600px) {
+    .dReservados, .dReservados span {
+        font-size: 10px;
+        transition: font-size .3s;
+        transition-timing-function: ease;
+    }
+}
+
+/* Celulares: 600px até 768px */
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    .dReservados, .dReservados span {
+        font-size: 12px;
+        transition: font-size .3s;
+        transition-timing-function: ease;
+    }
+}
+
+/* Tablet: 768px até 992px */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .dReservados, .dReservados span {
+        font-size: 12px;
+        transition: font-size .3s;
+        transition-timing-function: ease;
+    }
+}
+
+/* Desktop: 992px até 1200px */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .dReservados, .dReservados span {
+        font-size: 14px;
+        transition: font-size .3s;
+        transition-timing-function: ease;
+    }
+}
+
+/* Grande telas: acima de 1200px */
+@media screen and (min-width: 1200px) {
+    .dReservados, .dReservados span {
+        font-size: 14px;
+        transition: font-size .3s;
+        transition-timing-function: ease;
+    }
+}
